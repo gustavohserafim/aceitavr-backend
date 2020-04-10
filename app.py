@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
 
@@ -12,4 +12,4 @@ application = Flask(__name__)
 
 @application.route('/')
 def hello_world():
-    return 'Hello corno!'
+    return render_template("index.html")
