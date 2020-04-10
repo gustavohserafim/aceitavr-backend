@@ -1,12 +1,19 @@
 from flask import Flask
+import sentry_sdk
+from sentry_sdk.integrations.flask import FlaskIntegration
 
-app = Flask(__name__)
+sentry_sdk.init(
+    dsn="https://edf04e6fd4ea4abcb569d0af006c7313@o375751.ingest.sentry.io/5195705",
+    integrations=[FlaskIntegration()]
+)
+
+application = Flask(__name__)
 
 
-@app.route('/')
+@application.route('/')
 def hello_world():
     return 'Hello World!'
 
 
 if __name__ == '__main__':
-    app.run()
+    application.run(port=80)
