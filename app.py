@@ -11,5 +11,15 @@ application = Flask(__name__)
 
 
 @application.route('/')
-def hello_world():
+def index():
     return render_template("index.html")
+
+
+@application.route('/restaurantes')
+def restaurants():
+    return render_template("restaurantes.html")
+
+
+@application.route('/cidades')
+def cities():
+    return render_template("cidades.html")
