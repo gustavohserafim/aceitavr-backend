@@ -1,38 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
-  text-align: center;
-  background-color: #ecf0f1;
+    text-align: center;
+    background-color: #ecf0f1;
+    margin: 0;
 }
 
 .App-logo {
-  width: 250px;
-  height: auto;
-  display: block;
-  margin-left: 20px;
-  margin-top: 20px;
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .App-header {
-  background-color: #ecf0f1;
-  /*min-height: 100vh;*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*justify-content: center;*/
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow: hidden;
+}
+
+
+.App-header a {
+    float: left;
+    display: block;
+    color: #555050;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.App-header a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 .App-body {
-  background-color: #ecf0f1;
-  flex-direction: column;
-  align-items: center;
-  font-size: 25px; /*calc(10px + 2vmin); */
-  color: black;
-  display: flex;
-  min-height: 100vh;
-  text-align: center;
+    background-color: #ecf0f1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    min-height: 100vh;
+    text-align: center;
+    padding: 10px;
 }
 
+
 .App-link {
-  color: #09d3ac;
+    color: #09d3ac;
+}
+
+.App-footer {
+    background-color: #f1f1f1;
+    padding: 10px;
 }
