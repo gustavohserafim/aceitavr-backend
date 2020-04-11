@@ -9,10 +9,21 @@
 <div class="App">
     <div class="App-header">
         <img src="/static/img/logo.png" class="App-logo" alt="logo">
+        <div>
+            <a href="/" data-rb-event-key="/" class="nav-link active">Página inicial</a>
+            <a href="/restaurantes" data-rb-event-key="/restaurantes" class="nav-link active">Restaurantes</a>
+            <a href="/cidades" data-rb-event-key="/cidades" class="nav-link active">Cidades</a>
+        </div>
     </div>
     <div class="App-body">
         {% block content %}
         {% endblock %}
+    </div>
+    <div class="App-footer">
+        <p>
+
+            <img src="/static/img/python-powered-h-50x65.png" alt="python powered logo">
+        </p>
     </div>
 </div>
 </body>
